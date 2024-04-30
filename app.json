@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Tunisys",
+  
+    "slug": "Tunisys",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/tun.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/auth.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.Tunisys",
+      "config": {
+        "googleMapsApiKey": "AIzaSyBHAxszhS42IHk4V7O3Byue2wkCzB4uyQo"
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow $(PRODUCT_NAME) to access camera.",
+        "NSMicrophoneUsageDescription": "Allow $(PRODUCT_NAME) to access your microphone"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.Tunisys",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyBHAxszhS42IHk4V7O3Byue2wkCzB4uyQo"
+        },
+        "permissions": [
+          "ACCESS_COARSE_LOCATION",
+          "ACCESS_FINE_LOCATION",
+          "FOREGROUND_SERVICE"
+        ]
+      },
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6019c0f3-5668-4af4-863b-48c4fb760cf3"
+      }
+    }
+  }
+}
